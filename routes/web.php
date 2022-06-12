@@ -36,7 +36,6 @@
 //     // $router->get('/refresh', 'access\manage@refresh');
 // });
 
-
 $router->group(['prefix' => 's3',  'middleware' => 'cekrequest'], function($router){
     $router->post('/upload/transfer', 'upload\index@transfer');
     $router->post('/upload/documents', 'upload\index@documents');
